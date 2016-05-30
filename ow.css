@@ -1,88 +1,189 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-
+html{
+  font-size: 14px;
+}
 body{
   font-family: 'Noto Sans Japanese', sans-serif;
-  font-size: 14px;
   line-height: 1.2;
-  color: #333;
+  color: #666;
+  background: #eee;
+}
+a{
+  color: #666;
+}
+a:hover{
+  color: #f89e35;
+}
+h1, h2, h3, h4{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+ul{
+  padding-left: 2rem;
 }
 .l-header{
-  padding: 1px 10px;
-  background-color: #404B62;
+  position: relative;
+  padding: 10px 40px;
+  background-color: #313d3e;
+  border-bottom: 3px solid #f7931e;
   color: #fff;
 }
-.l-main{
-  width: 100%;
+.l-mainWrapper{
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 45px;
 }
 .l-nav{
-  width: 200px;
-  padding-top: 20px;
-  background: #ddd;
+  flex: 0 1 200px;
+  padding-right: 15px;
 }
-.l-nav h2{
-  font-size: 1rem;
-  margin: 10px 0 0 13px;
-}
-.l-article{
-  flex: 1;
-  padding-bottom: 40px;
-  background: #eee;
+.l-main{
+  flex: 1 1 auto;
 }
 .l-footer{
   padding: 20px;
 }
+.m-headerLink{
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+.m-headerLink a{
+  font-size: 0.9rem;
+  color: #bbb;
+}
+.m-panel{
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+.m-panelTitle{
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #666;
+}
+.m-panelTitle i.fa-caret-up,
+.m-panelTitle i.fa-caret-down{
+  display: none;
+}
+.m-panelBody{
+  padding: 15px;
+}
+.m-panelSubTitle{
+  font-size: 1rem;
+}
 .m-summary{
+  margin-bottom: 20px;
   padding: 20px;
   color: #fff;
-}
-.do .m-summary{
-  background: #fff url(img/Dorado.jpg) no-repeat center left;
-  background-size: cover;
+  text-shadow: 0 0 4px #000;
 }
 .m-summary h2{
   font-weight: bold;
   font-size: 1.5rem;
-  text-shadow: 0 0 4px #000;
 }
-.m-tierlist{
-  display: flex;
-}
-.m-tierlist > div{
-  flex: 1;
-  margin: 10px;
-  padding: 8px 3px 10px 20px;
-  background-color: #fff;
-}
-.m-tierlist > div ul{
-  display: flex;
-  flex-wrap: wrap;
+.m-pickList{
   margin: 0;
-  padding: 0;
-  list-style: none;
 }
-.m-tierlist > div ul li{
-  margin: 0 0 0 -10px;
-  padding: 0;
-  list-style: none;
-  position: relative;
+.m-mapList{
+  margin: 10px 0 20px;
 }
-.m-tierlist > div ul li span{
-  position: absolute;
-  display: inline-block;
-  width: 96px;
-  bottom: 10px;
-  left: 0;
-  text-align: center;
-  color: #fff;
+.m-mapList li{
+  padding: 3px 0;
 }
-
+.m-tierList{
+  display: flex;
+  justify-content: space-between;
+}
+.m-tierList > div{
+  width: 49%;
+}
+.m-attack .m-panelTitle{
+  color: #8c230c;
+}
+.m-defence .m-panelTitle{
+  color: #588c01;
+}
+.m-pageTop{
+  position: fixed;
+  font-size: 3rem;
+  bottom: 20px;
+  left: 15px;
+}
 @media all and (max-width: 768px) {
-  .l-main,.m-tierlist {
+  .l-mainWrapper {
     flex-direction: column;
    }
   .l-nav{
-    width: 100%;
+    flex: 0 1 100%;
+    padding: 0;
   }
+  .m-panelTitle{
+    cursor: pointer;
+  }
+  .m-panelTitle i.fa-caret-up,
+  .m-panelTitle i.fa-caret-down{
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .m-panelBody.is-collapsed{
+    display: none;
+  }
+}
+#do .m-summary{
+  background: #fff url(img/Dorado.jpg) no-repeat center left;
+  background-size: cover;
+}
+#ha .m-summary{
+  background: #fff url(img/Hanamura_009.jpg) no-repeat center left;
+  background-size: cover;
+}
+#ho .m-summary{
+  background: #fff url(img/Hollywood.jpg) no-repeat center left;
+  background-size: cover;
+}
+#il .m-summary{
+  background: #fff url(img/Ilios.jpg) no-repeat center left;
+  background-size: cover;
+}
+#ki .m-summary{
+  background: #fff url(img/KingsRow.jpg) no-repeat center left;
+  background-size: cover;
+}
+#li .m-summary{
+  background: #fff url(img/LiJiangTower.jpg) no-repeat center left;
+  background-size: cover;
+}
+#ne .m-summary{
+  background: #fff url(img/Nepal.jpg) no-repeat center left;
+  background-size: cover;
+}
+#nu .m-summary{
+  background: #fff url(img/Numbani_012.jpg) no-repeat center left;
+  background-size: cover;
+}
+#ro .m-summary{
+  background: #fff url(img/Route66.jpg) no-repeat center left;
+  background-size: cover;
+}
+#te .m-summary{
+  background: #fff url(img/TempleOfAnubis.jpg) no-repeat center left;
+  background-size: cover;
+}
+#vo .m-summary{
+  background: #fff url(img/Volskaya_011.jpg) no-repeat center left;
+  background-size: cover;
+}
+#wa .m-summary{
+  background: #fff url(img/Gibraltar_02.jpg) no-repeat center left;
+  background-size: cover;
 }

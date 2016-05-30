@@ -1,112 +1,593 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Overwatch Tier List</title>
+<title>Overwatch Memo</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="ow.css">
-<script src=""></script>
+<script src="ow.js"></script>
 </head>
 <body class="do">
 <div class="l-container">
 <div class="l-header">
-  <h1>Overwatch Tier List</h1>
+  <h1>Overwatch Memo</h1>
+  <div class="m-headerLink"><a href="">@nanatasu</a></div>
 </div>
-<div class="l-main">
+<div class="l-mainWrapper">
   <div class="l-nav">
-    <h2><i class="fa fa-truck" aria-hidden="true"></i> ESCORT</h2>
-    <ul class="m-maplist">
-    <li><a href="do.html">Dorado</a></li>
-    <li><a href="ro.html">Routes 66</a></li>
-    <li><a href="wa.html">Watchpoint: Gibraltar</a></li>
-    </ul>
-    <h2><i class="fa fa-circle-o-notch" aria-hidden="true"></i> ASSULT</h2>
-    <ul class="m-maplist">
-    <li><a href="ha.html">Hanamura</a></li>
-    <li><a href="te.html">Temple of Anubis</a></li>
-    <li><a href="vo.html">Volskaya Industries</a></li>
-    </ul>
-    <h2><i class="fa fa-ambulance" aria-hidden="true"></i> HYBLID</h2>
-    <ul class="m-maplist">
-    <li><a href="ki.html">King's Row</a></li>
-    <li><a href="nu.html">Numbani</a></li>
-    <li><a href="ho.html">Hollywood</a></li>
-    </ul>
-    <h2><i class="fa fa-tasks" aria-hidden="true"></i> CONTROL</h2>
-    <ul class="m-maplist">
-    <li><a href="il.html">Ilios</a></li>
-    <li><a href="ne.html">Nepal</a></li>
-    <li><a href="li.html">Lijiang Tower</a></li>
-    </ul>
-  </div>
-  <div class="l-article">
-    <div class="m-summary">
-      <h2>Dorado</h2>
-      <p><i class="fa fa-truck" aria-hidden="true"></i> ESCORT</p>
-    </div>
-    <div class="m-tierlist">
-      <div class="m-attack">
-        <h3><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
-        <h4>Tier 1</h4>
-        <ul>
-        <li><img src="img/Lúcio_link.png"><span>Lúcio</span></li>
-        <li><img src="img/Reinhardt_link.png"><span>Reinhardt</span></li>
-        </ul>
-        <h4>Tier 2</h4>
-        <ul>
-        <li><img src="img/Genji_link.png"><span>Genji</span></li>
-        <li><img src="img/Pharah_link.png"><span>Pharah</span></li>
-        <li><img src="img/Tracer_link.png"><span>Tracer</span></li>
-        <li><img src="img/D.Va_link.png"><span>D.Va</span></li>
-        <li><img src="img/Mercy_link.png"><span>Mercy</span></li>
+    <div class="m-panel">
+      <h2 class="m-panelTitle collapse" data-target="collapse1"><i class="fa fa-caret-down" aria-hidden="true"></i>COUNTER PICKS</h2>
+      <div id="collapse1" class="m-panelBody is-collapsed">
+        <ul class="m-pickList">
+        <li><a href="do">Hero List</a></li>
         </ul>
       </div>
-      <div class="m-defence">
-        <h3><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
-        <h4>Tier 1</h4>
-        <ul>
-        <li><img src="img/D.Va_link.png"><span>D.Va</span></li>
-        <li><img src="img/Lúcio_link.png"><span>Lúcio</span></li>
-        <li><img src="img/Reinhardt_link.png"><span>Reinhardt</span></li>
+    </div>
+    <div class="m-panel">
+      <h2 class="m-panelTitle collapse" data-target="collapse2"><i class="fa fa-caret-down" aria-hidden="true"></i>MAP LIST</h2>
+      <div id="collapse2" class="m-panelBody is-collapsed">
+        <h3 class="m-panelSubTitle"><i class="fa fa-truck" aria-hidden="true"></i> ESCORT</h3>
+        <ul class="m-mapList">
+        <li><a href="#do">Dorado</a></li>
+        <li><a href="#ro">Routes 66</a></li>
+        <li><a href="#wa">Watchpoint: Gibraltar</a></li>
         </ul>
-        <h4>Tier 2</h4>
-        <ul>
-        <li><img src="img/Hanzo_link.png"><span>Hanzo</span></li>
-        <li><img src="img/Mei_link.png"><span>Mei</span></li>
-        <li><img src="img/Widowmaker_link.png"><span>Widowmaker</span></li>
-        <li><img src="img/Roadhog_link.png"><span>Roadhog</span></li>
-        <li><img src="img/Mercy_link.png"><span>Mercy</span></li>
+        <h3 class="m-panelSubTitle"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> ASSULT</h3>
+        <ul class="m-mapList">
+        <li><a href="#ha">Hanamura</a></li>
+        <li><a href="#te">Temple of Anubis</a></li>
+        <li><a href="#vo">Volskaya Industries</a></li>
         </ul>
+        <h3 class="m-panelSubTitle"><i class="fa fa-ambulance" aria-hidden="true"></i> HYBLID</h3>
+        <ul class="m-mapList">
+        <li><a href="#ki">King's Row</a></li>
+        <li><a href="#nu">Numbani</a></li>
+        <li><a href="#ho">Hollywood</a></li>
+        </ul>
+        <h3 class="m-panelSubTitle"><i class="fa fa-tasks" aria-hidden="true"></i> CONTROL</h3>
+        <ul class="m-mapList">
+        <li><a href="#il">Ilios</a></li>
+        <li><a href="#ne">Nepal</a></li>
+        <li><a href="#li">Lijiang Tower</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="l-main">
+    <div class="m-section" id="do">
+      <div class="m-summary">
+        <h2>Dorado</h2>
+        <p><i class="fa fa-truck" aria-hidden="true"></i> ESCORT</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="ro">
+      <div class="m-summary">
+        <h2>Routes 66</h2>
+        <p><i class="fa fa-truck" aria-hidden="true"></i> ESCORT</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="wa">
+      <div class="m-summary">
+        <h2>Watchpoint: Gibraltar</h2>
+        <p><i class="fa fa-truck" aria-hidden="true"></i> ESCORT</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="ha">
+      <div class="m-summary">
+        <h2>Hanamura</h2>
+        <p><i class="fa fa-circle-o-notch" aria-hidden="true"></i> ASSULT</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="te">
+      <div class="m-summary">
+        <h2>Temple of Anubis</h2>
+        <p><i class="fa fa-circle-o-notch" aria-hidden="true"></i> ASSULT</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="vo">
+      <div class="m-summary">
+        <h2>Volskaya Industries</h2>
+        <p><i class="fa fa-circle-o-notch" aria-hidden="true"></i> ASSULT</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="ki">
+      <div class="m-summary">
+        <h2>King's Row</h2>
+        <p><i class="fa fa-ambulance" aria-hidden="true"></i> HYBLID</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="nu">
+      <div class="m-summary">
+        <h2>Numbani</h2>
+        <p><i class="fa fa-ambulance" aria-hidden="true"></i> HYBLID</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="ho">
+      <div class="m-summary">
+        <h2>Hollywood</h2>
+        <p><i class="fa fa-ambulance" aria-hidden="true"></i> HYBLID</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="il">
+      <div class="m-summary">
+        <h2>Ilios</h2>
+        <p><i class="fa fa-tasks" aria-hidden="true"></i> CONTROL</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="ne">
+      <div class="m-summary">
+        <h2>Nepal</h2>
+        <p><i class="fa fa-tasks" aria-hidden="true"></i> CONTROL</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-section" id="li">
+      <div class="m-summary">
+        <h2>Lijiang Tower</h2>
+        <p><i class="fa fa-tasks" aria-hidden="true"></i> CONTROL</p>
+      </div>
+      <div class="m-tierList">
+        <div class="m-panel m-attack">
+          <h3 class="m-panelTitle"><i class="fa fa-bomb" aria-hidden="true"></i> ATTACK</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-panel m-defence">
+          <h3 class="m-panelTitle"><i class="fa fa-shield" aria-hidden="true"></i> DEFENCE</h3>
+          <div class="m-panelBody">
+            <h4>Tier 1</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-re">Reinhardt</span></li>
+              <li><span class="m-icon-hero icon-lu">Lúcio</span></li>
+            </ul>
+            <h4>Tier 2</h4>
+            <ul>
+              <li><span class="m-icon-hero icon-ge">Genji</span></li>
+              <li><span class="m-icon-hero icon-ph">Pharah</span></li>
+              <li><span class="m-icon-hero icon-tr">Tracer</span></li>
+              <li><span class="m-icon-hero icon-dv">D.Va</span></li>
+              <li><span class="m-icon-hero icon-me">Mercy</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 <div class="l-footer">
+<a href="#" class="m-pageTop"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
 </div>
 </div>
 </body>
 </html>
-<!--
-        <li><img src="img/Genji_link.png"><span>Genji</span></li>
-        <li><img src="img/McCree_link.png"><span>McCree</span></li>
-        <li><img src="img/Pharah_link.png"><span>Pharah</span></li>
-        <li><img src="img/Reaper_link.png"><span>Reaper</span></li>
-        <li><img src="img/Soldier_76_link.png"><span>Soldier: 76</span></li>
-        <li><img src="img/Tracer_link.png"><span>Tracer</span></li>
-        <li><img src="img/Bastion_link.png"><span>Bastion</span></li>
-        <li><img src="img/Hanzo_link.png"><span>Hanzo</span></li>
-        <li><img src="img/Junkrat_link.png"><span>Junkrat</span></li>
-        <li><img src="img/Mei_link.png"><span>Mei</span></li>
-        <li><img src="img/Torbjörn_link.png"><span>Torbjörn</span></li>
-        <li><img src="img/Widowmaker_link.png"><span>Widowmaker</span></li>
-        <li><img src="img/D.Va_link.png"><span>D.Va</span></li>
-        <li><img src="img/Reinhardt_link.png"><span>Reinhardt</span></li>
-        <li><img src="img/Roadhog_link.png"><span>Roadhog</span></li>
-        <li><img src="img/Winston_link.png"><span>Winston</span></li>
-        <li><img src="img/Zarya_link.png"><span>Zarya</span></li>
-        <li><img src="img/Lúcio_link.png"><span>Lúcio</span></li>
-        <li><img src="img/Mercy_link.png"><span>Mercy</span></li>
-        <li><img src="img/Symmetra_link.png"><span>Symmetra</span></li>
-        <li><img src="img/Zenyatta_link.png"><span>Zenyatta</span></li>
--->
