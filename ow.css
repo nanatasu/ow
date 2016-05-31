@@ -240,11 +240,8 @@ ul{
   .m-panelBody.is-collapsed{
     display: none;
   }
-  .m-heroesList li > div.m-lose{
-    width: 120px;
-  }
-  .m-heroesList li > div{
-    font-size: 0.8em;
+  .m-heroesName{
+    display: none;
   }
   .m-pageTop{
     left: auto;
