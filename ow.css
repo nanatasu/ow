@@ -39,7 +39,6 @@ ul{
 .l-nav{
   flex: 0 1 200px;
   padding-right: 15px;
-  border: 1px solid #ff0080;
 }
 .l-main{
   flex: 1 1 auto;
@@ -122,10 +121,10 @@ ul{
 }
 @media all and (max-width: 640px) {
   .l-mainWrapper {
-    flex-direction: column;
+    display: block;
+    padding: 20px;
    }
   .l-nav{
-    flex: none;
     padding: 0;
   }
   .m-panelTitle{
