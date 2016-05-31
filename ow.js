@@ -1,6 +1,5 @@
 window.addEventListener("load", function() {
   var trg = document.querySelectorAll(".collapse");
-alert("hoge");
   for(var i=0; i<trg.length; i++){
     trg[i].addEventListener("click", function() {
       var tgt = document.getElementById(this.dataset.target);

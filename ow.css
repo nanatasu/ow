@@ -97,7 +97,8 @@ ul{
 .m-mapList{
   margin: 10px 0 20px;
 }
-.m-mapList li{
+.m-mapList li,
+.m-pickList li{
   padding: 3px 0;
 }
 .m-tierList{
@@ -112,6 +113,107 @@ ul{
 }
 .m-defence .m-panelTitle{
   color: #588c01;
+}
+.m-heroesList{
+  padding: 0;
+  margin: 10px 0 20px;
+  list-style: none;
+}
+.m-heroesList li{
+  display: table;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+.m-heroesList li > div{
+  display: table-cell;
+  vertical-align: middle;
+}
+.m-heroesList li > div.m-lose{
+  width: 160px;
+  color: #8c230c;
+}
+.m-heroesList li > div.m-win{
+  color: #588c01;
+}
+.m-heroesList li > div.m-win i{
+  color: #333;
+}
+.m-heroesIcon{
+  display: inline-block;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  background: #ccc;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+}
+.m-heroesIcon.bas{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000015.png');
+}
+.m-heroesIcon.dva{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E000000000007A.png');
+}
+.m-heroesIcon.gen{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000029.png');
+}
+.m-heroesIcon.han{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000005.png');
+}
+.m-heroesIcon.jun{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000065.png');
+}
+.m-heroesIcon.luc{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000079.png');
+}
+.m-heroesIcon.mcc{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000042.png');
+}
+.m-heroesIcon.mei{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E00000000000DD.png');
+}
+.m-heroesIcon.mer{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000004.png');
+}
+.m-heroesIcon.pha{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000008.png');
+}
+.m-heroesIcon.rea{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000002.png');
+}
+.m-heroesIcon.rei{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000007.png');
+}
+.m-heroesIcon.roa{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000040.png');
+}
+.m-heroesIcon.sol{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E000000000006E.png');
+}
+.m-heroesIcon.sym{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000016.png');
+}
+.m-heroesIcon.tor{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000006.png');
+}
+.m-heroesIcon.tra{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000003.png');
+}
+.m-heroesIcon.wid{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E000000000000A.png');
+}
+.m-heroesIcon.win{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000009.png');
+}
+.m-heroesIcon.zar{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000068.png');
+}
+.m-heroesIcon.zen{
+  background-image:url('https://d1u1mce87gyfbn.cloudfront.net/game/heroes/0x02E0000000000020.png');
 }
 .m-pageTop{
   position: fixed;
