@@ -138,6 +138,10 @@ ul{
   .m-panelBody.is-collapsed{
     display: none;
   }
+  .m-pageTop{
+    left: auto;
+    right: 15px;
+  }
 }
 #do .m-summary{
   background: #fff url(img/Dorado.jpg) no-repeat center left;
