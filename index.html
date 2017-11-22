@@ -1,450 +1,362 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<!DOCTYPE html>
+<html>
 <head>
-<base href="http://www.city.kitakyushu.lg.jp">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
- <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>弾道ミサイルが落下する可能性がある場合の行動について - 北九州市</title>
-<link rel="shortcut icon" href="http://www.city.kitakyushu.lg.jp/favicon.ico" type="image/x-icon" />
-<meta name="copyright" content="Copyright (C) CITY OF KITAKYUSHU All Rights Reserved." />
-<link rel="canonical" href="http://www.city.kitakyushu.lg.jp/kiki-kanri/13801156.html" />
-
-<link rel="stylesheet" type="text/css" media="all" href="/files/import.css" />
-<script type="text/javascript" src="/files/fontsize.js"></script>
-<script type="text/javascript" src="/files/print.js"></script>
-<script type="text/javascript" src="/files/minmax.js"></script>
-<script type="text/javascript" src="/files/googlesearch.js"></script>
-<script type="text/javascript" src="/files/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="/files/menu.js"></script>
-<script type="text/javascript" src="/files/window.js"></script>
-<link href="/files/responsive.css" rel="stylesheet" type="text/css" />
-<script src="/files/responsive.js" type="text/javascript"></script>
-<script>
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-21446535-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+<title>Overwatch Memo</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="ow.css">
+<script src="ow.js"></script>
 </head>
-<body class="kurashi">
-
-<noscript>このページではJavaScriptを使用しています。JavaScriptを有効にすると文字サイズ「拡大」「標準」の機能を有効にすることができます。</noscript>
-
-<div><a id="PAGETOP" name="PAGETOP"><span>ページトップ</span></a></div>
-
-<!-- masterLayoutArea -->
-<div id="masterLayoutArea" class="clearfix">
-<div id="leftSpace"></div>
-<div id="rightSpace"></div>
-<div id="contentSpace">
-
-<!-- container -->
-<div id="container">
-<div id="containerInner">
-
-<!-- headerWrap -->
-<div id="headerWrap">
-<div id="headerMenu" class="menuBtn">メニュー</div>
-<div id="header">
-<div id="headerMain" class="clearfix">
-<div id="headerRight">
-<ul class="headerLink">
-<li class="toContents"><a href="#bodycontents">本文へ</a></li>
-<li class="sitemap"><a href="/sitemap.html">サイトマップ</a></li>
-<li class="howToUse"><a href="/kouhou/file_0105.html">このホームページの使い方</a></li>
-<li class="mobile"><a href="/kouhou/file_0106.html">携帯サイト</a></li>
-</ul>
-
-<!-- tool -->
-<div id="tool" class="clearfix">
-
-<!-- search --><div id="search"><gcse:searchbox-only resultsUrl="/search.html"></gcse:searchbox-only><a href="/kouhou/08300003.html"><img src="/files/000000061.gif" alt="ヘルプ" class="helpbtn" /></a></div><!-- /search --><!-- fontsize --><ul id="fontsize"><li class="text"><img src="/files/000000062.gif" width="28" height="22" alt="文字" /></li><li class="enlarge"><a href="javascript:textSizeUp();"><img src="/files/000000063.gif" width="39" height="22" alt="拡大" /></a></li><li class="normal"><a href="javascript:textSizeReset();"><img src="/files/000000064.gif" width="39" height="22" alt="標準" /></a></li></ul><!-- /fontsize --><!-- read --><div id="read"><a href="#" onclick="location.href ='http://www.easywebbrowsing.com/G/40-100/index.html?StartURL='+location.href"><img src="/files/000000065.gif" width="145" height="22" alt="音声読み上げ・ふりがな" /></a></div><!-- /read -->
-
+<body class="do">
+<div class="l-container">
+<div class="l-header">
+  <h1>Overwatch Memo</h1>
+  <div class="m-headerLink"><a href="">@nanatasu</a></div>
 </div>
-<!-- /tool -->
-
+<div class="l-mainWrapper">
+  <div class="l-nav">
+    <div class="m-panel">
+      <h2 class="m-panelTitle collapse" data-target="collapse1"><i class="fa fa-caret-down" aria-hidden="true"></i>Counter Picks</h2>
+      <div id="collapse1" class="m-panelBody is-collapsed">
+        <ul class="m-pickList">
+        <li><a href="#offence">OFFENCE</a></li>
+        <li><a href="#defence">DEFENCE</a></li>
+        <li><a href="#tank">TANK</a></li>
+        <li><a href="#support">SUPPORT</a></li>
+        <li><a href="http://www.owfire.com/overwatch/counters">owfire.com</a> <i class="fa fa-external-link" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="m-panel">
+      <h2 class="m-panelTitle collapse" data-target="collapse2"><i class="fa fa-caret-down" aria-hidden="true"></i>Tier List</h2>
+      <div id="collapse2" class="m-panelBody is-collapsed">
+        <h3 class="m-panelSubTitle"><i class="fa fa-truck" aria-hidden="true"></i> ESCORT</h3>
+        <ul class="m-mapList">
+        <li><a href="tierlist.html#do">Dorado</a></li>
+        <li><a href="tierlist.html#ro">Routes 66</a></li>
+        <li><a href="tierlist.html#wa">Watchpoint: Gibraltar</a></li>
+        </ul>
+        <h3 class="m-panelSubTitle"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> ASSULT</h3>
+        <ul class="m-mapList">
+        <li><a href="tierlist.html#ha">Hanamura</a></li>
+        <li><a href="tierlist.html#te">Temple of Anubis</a></li>
+        <li><a href="tierlist.html#vo">Volskaya Industries</a></li>
+        </ul>
+        <h3 class="m-panelSubTitle"><i class="fa fa-ambulance" aria-hidden="true"></i> HYBLID</h3>
+        <ul class="m-mapList">
+        <li><a href="tierlist.html#ki">King's Row</a></li>
+        <li><a href="tierlist.html#nu">Numbani</a></li>
+        <li><a href="tierlist.html#ho">Hollywood</a></li>
+        </ul>
+        <h3 class="m-panelSubTitle"><i class="fa fa-tasks" aria-hidden="true"></i> CONTROL</h3>
+        <ul class="m-mapList">
+        <li><a href="tierlist.html#il">Ilios</a></li>
+        <li><a href="tierlist.html#ne">Nepal</a></li>
+        <li><a href="tierlist.html#li">Lijiang Tower</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="l-main">
+    <div class="m-section">
+      <div class="m-panel">
+        <h2 class="m-panelTitle">Heroes List</h2>
+        <div class="m-panelBody">
+          <h3 id="offence" class="m-panelSubTitle">OFFENSE</h3>
+          <ul class="m-heroesList">
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon gen"></span>
+            <strong>Genji</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon win"></span>
+            <span class="m-heroesName">Winston</span>
+            <span class="m-heroesIcon mei"></span>
+            <span class="m-heroesName">Mei</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon mcc"></span>
+            <strong>McCree</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon wid"></span>
+            <span class="m-heroesName">Widowmaker</span>
+            <span class="m-heroesIcon han"></span>
+            <span class="m-heroesName">Hanzo</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon pha"></span>
+            <strong>Pharah</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon sol"></span>
+            <span class="m-heroesName">Soldier: 76</span>
+            <span class="m-heroesIcon wid"></span>
+            <span class="m-heroesName">Widowmaker</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon rea"></span>
+            <strong>Reaper</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon pha"></span>
+            <span class="m-heroesName">Pharah</span>
+            <span class="m-heroesIcon mcc"></span>
+            <span class="m-heroesName">McCree</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon sol"></span>
+            <strong>Soldier: 76</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon roa"></span>
+            <span class="m-heroesName">Roadhog</span>
+            <span class="m-heroesIcon rei"></span>
+            <span class="m-heroesName">Reinhardt</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon rea"></span>
+            <strong>Tracer</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon mcc"></span>
+            <span class="m-heroesName">McCree</span>
+            <span class="m-heroesIcon roa"></span>
+            <span class="m-heroesName">Roadhog</span>
+            </div>
+          </li>
+          </ul>
+          <h3 id="defence" class="m-panelSubTitle">DEFENSE</h3>
+          <ul class="m-heroesList">
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon bas"></span>
+            <strong>Bastion</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon gen"></span>
+            <span class="m-heroesName">Genji</span>
+            <span class="m-heroesIcon jun"></span>
+            <span class="m-heroesName">Junkrat</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon han"></span>
+            <strong>Hanzo</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon wid"></span>
+            <span class="m-heroesName">Widowmaker</span>
+            <span class="m-heroesIcon tra"></span>
+            <span class="m-heroesName">Tracer</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon jun"></span>
+            <strong>Junkrat</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon win"></span>
+            <span class="m-heroesName">Winston</span>
+            <span class="m-heroesIcon pha"></span>
+            <span class="m-heroesName">Pharah</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon mei"></span>
+            <strong>Mei</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon tra"></span>
+            <span class="m-heroesName">Tracer</span>
+            <span class="m-heroesIcon pha"></span>
+            <span class="m-heroesName">Pharah</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon tor"></span>
+            <strong>Torbjörn</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon wid"></span>
+            <span class="m-heroesName">Widowmaker</span>
+            <span class="m-heroesIcon dva"></span>
+            <span class="m-heroesName">D.Va</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon wid"></span>
+            <strong>Widowmaker</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon dva"></span>
+            <span class="m-heroesName">D.Va</span>
+            <span class="m-heroesIcon gen"></span>
+            <span class="m-heroesName">Genji</span>
+            </div>
+          </li>
+          </ul>
+          <h3 id="tank" class="m-panelSubTitle">TANK</h3>
+          <ul class="m-heroesList">
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon dva"></span>
+            <strong>D.Va</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon mei"></span>
+            <span class="m-heroesName">Mei</span>
+            <span class="m-heroesIcon zen"></span>
+            <span class="m-heroesName">Zenyatta</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon rei"></span>
+            <strong>Reinhardt</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon sym"></span>
+            <span class="m-heroesName">Symmetra</span>
+            <span class="m-heroesIcon gen"></span>
+            <span class="m-heroesName">Genji</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon roa"></span>
+            <strong>Roadhog</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon mei"></span>
+            <span class="m-heroesName">Mei</span>
+            <span class="m-heroesIcon rea"></span>
+            <span class="m-heroesName">Reaper</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon win"></span>
+            <strong>Winston</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon rea"></span>
+            <span class="m-heroesName">Reaper</span>
+            <span class="m-heroesIcon bas"></span>
+            <span class="m-heroesName">Bastion</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon zar"></span>
+            <strong>Zarya</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon jun"></span>
+            <span class="m-heroesName">Junkrat</span>
+            <span class="m-heroesIcon pha"></span>
+            <span class="m-heroesName">Pharah</span>
+            </div>
+          </li>
+          </ul>
+          <h3 id="support" class="m-panelSubTitle">SUPPORT</h3>
+          <ul class="m-heroesList">
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon luc"></span>
+            <strong>Lúcio</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon mei"></span>
+            <span class="m-heroesName">Mei</span>
+            <span class="m-heroesIcon mcc"></span>
+            <span class="m-heroesName">McCree</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon mer"></span>
+            <strong>Mercy</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon sol"></span>
+            <span class="m-heroesName">Soldier: 76</span>
+            <span class="m-heroesIcon gen"></span>
+            <span class="m-heroesName">Genji</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon sym"></span>
+            <strong>Symmetra</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon roa"></span>
+            <span class="m-heroesName">Roadhog</span>
+            <span class="m-heroesIcon pha"></span>
+            <span class="m-heroesName">Pharah</span>
+            </div>
+          </li>
+          <li>
+            <div class="m-lose">
+            <span class="m-heroesIcon zen"></span>
+            <strong>Zenyatta</strong>
+            </div>
+            <div class="m-win">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="m-heroesIcon wid"></span>
+            <span class="m-heroesName">Widowmaker</span>
+            <span class="m-heroesIcon gen"></span>
+            <span class="m-heroesName">Genji</span>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div id="headerLeft">
-<p class="logo"><a href="/index.html"><img src="/files/000000036.gif" width="181" height="47" alt="北九州市トップページへ" /></a></p>
-</div>
-</div>
- 
-                    <!-- gNavi -->
-                    <div id="gNavi">
-                        <ul class="clearfix">
-                            <li class="mokuji"><span>もくじ</span></li>
-                            <li class="top"><a href="/index.html">トップ</a></li>
-                            <li class="kurashi"><a href="/kurashi/index.html">くらしの情報</a>
-                            <p class="gNaviSubBar">&nbsp;</p>
-                            <div class="gNaviSub">
-                                <ul>
-                                    <li class="odd"><a href="/kurashi/newslist.html">新着情報一覧</a></li>
-                                    <li class="even"><a href="/kurashi/menu01_0002.html">住民票・戸籍</a></li>
-                                    <li class="odd"><a href="/kurashi/menu01_0005.html">税・保険・年金</a></li>
-                                    <li class="even"><a href="/kurashi/menu01_0030.html">安全・安心</a></li>
-                                    <li class="odd"><a href="/kurashi/menu01_0151.html">子育て・教育</a></li>
-                                    <li class="even"><a href="/kurashi/menu01_0224.html">健康・医療・衛生</a></li>
-                                    <li class="odd"><a href="/kurashi/menu01_0293.html">福祉・人権</a></li>
-                                    <li class="even"><a href="/kurashi/menu01_0347.html">住まい・上下水道</a></li>
-                                    <li class="odd"><a href="/kurashi/menu01_0389.html">ごみ・リサイクル・環境</a></li>
-                                    <li class="even"><a href="/kurashi/menu01_0492.html">交通・道路・駐車場等</a></li>
-                                    <li class="odd"><a href="/kurashi/menu01_0544.html">河川・緑・公園</a></li>
-                                    <li class="even"><a href="/kurashi/menu01_0572.html">生涯学習・市民活動・男女共同参画</a></li>
-                                    <li class="odd"><a href="/kurashi/menu01_0602.html">外国人市民施策</a></li>
-                                    <li class="even"><a href="/kurashi/menu01_0611.html">相談・窓口</a></li>
-                                    <li class="odd"><a href="/shisei/menu05_0017.html">市政ガイドブック「くらしの便利情報」</a></li>
-                                    <li class="even"><a href="/category/menu00_0001.html">主な出来事から探す</a></li>
-                                </ul>
-                            </div>
-                            </li>
-                            <li class="kanko"><a href="/kanko/index.html">観光・おでかけ</a>
-                            <p class="gNaviSubBar">&nbsp;</p>
-                            <div class="gNaviSub">
-                                <ul>
-                                    <li class="odd"><a href="/kanko/newslist.html">新着情報一覧</a></li>
-                                    <li class="even"><a href="/kanko/menu02_0002.html">観光ガイド</a></li>
-                                    <li class="odd"><a href="/kanko/menu02_0004.html">おでかけ</a></li>
-                                    <li class="even"><a href="/eventtop.html">イベント情報一覧</a></li>
-                                    <li class="odd"><a href="/kanko/menu02_0020.html">行事予定・イベントカレンダー</a></li>
-                                    <li class="even"><a href="/kanko/menu02_0022.html">芸術・文化</a></li>
-                                    <li class="odd"><a href="/kanko/menu02_0047.html">スポーツ</a></li>
-                                    <li class="even"><a href="/kanko/menu02_0056.html">シティプロモーション</a></li>
-                                    <li class="odd"><a href="/kanko/menu02_00002.html">周年記念事業</a></li>
-                                    <li class="even"><a href="/kanko/menu02_0076.html">世界文化遺産登録</a></li>
-                                    <li class="odd"><a href="/kanko/menu02_00020.html">ユネスコ無形文化遺産登録</a></li>
-                                </ul>
-                            </div>
-                            </li>
-                            <li class="business"><a href="/business/index.html">ビジネス・産業・まちづくり</a>
-                            <p class="gNaviSubBar">&nbsp;</p>
-                            <div class="gNaviSub">
-                                <ul>
-                                    <li class="odd"><a href="/business/newslist.html">新着情報一覧</a></li>
-                                    <li class="even"><a href="/business/menu03_0002.html">入札・契約</a></li>
-                                    <li class="odd"><a href="/shisei/menu05_0278.html">北九州市の広告事業</a></li>
-                                    <li class="even"><a href="/business/menu03_0035.html">税</a></li>
-                                    <li class="odd"><a href="/business/menu03_0036.html">都市計画・建築・景観・開発</a></li>
-                                    <li class="even"><a href="/business/menu03_0153.html">医療・福祉・健康・衛生（事業者向け）</a></li>
-                                    <li class="odd"><a href="/business/menu03_0167.html">ごみ・環境（事業者向け）</a></li>
-                                    <li class="even"><a href="/business/menu03_0183.html">消防・道路・上下水道（事業者向け）</a></li>
-                                    <li class="odd"><a href="/business/menu03_0192.html">試験・講習・研修案内（事業者向け）</a></li>
-                                    <li class="even"><a href="/business/menu03_0199.html">市の産業・雇用戦略及び景況</a></li>
-                                    <li class="odd"><a href="/business/menu03_0200.html">企業等の誘致</a></li>
-                                    <li class="even"><a href="/business/menu03_0201.html">雇用・産業人材</a></li>
-                                    <li class="odd"><a href="/business/menu03_0208.html">商・工業振興</a></li>
-                                    <li class="even"><a href="/business/menu03_0225.html">農林業・水産業振興</a></li>
-                                    <li class="odd"><a href="/business/menu03_0261.html">国際ビジネス・物流</a></li>
-                                    <li class="even"><a href="/business/menu03_0266.html">学術・研究</a></li>
-                                    <li class="odd"><a href="/business/menu03_00077.html">国際会議</a></li>
-                                </ul>
-                            </div>
-                            </li>
-                            <li class="welcome"><a href="/youkoso/index.html">ようこそ北九州</a>
-                            <p class="gNaviSubBar">&nbsp;</p>
-                            <div class="gNaviSub">
-                                <ul>
-                                    <li class="odd"><a href="/youkoso/file_0008.html">世界の環境首都</a></li>
-                                    <li class="even"><a href="/youkoso/file_0009.html">企業立地支援</a></li>
-                                    <li class="odd"><a href="/youkoso/file_0010.html">北九州市　時と風の博物館</a></li>
-                                    <li class="even"><a href="/youkoso/file_0001.html">知る</a></li>
-                                    <li class="odd"><a href="/youkoso/file_0005.html">住む</a></li>
-                                    <li class="even"><a href="/youkoso/file_0006.html">働く</a></li>
-                                    <li class="odd"><a href="/youkoso/file_0004.html">食べる</a></li>
-                                    <li class="even"><a href="/youkoso/file_0003.html">観る</a></li>
-                                    <li class="odd"><a href="/youkoso/file_0002.html">まちなみ</a></li>
-                                    <li class="even"><a href="/youkoso/accessmap.html" class="blank">アクセスマップ</a></li>
-                                </ul>
-                            </div>
-                            </li>
-                            <li class="shisei"><a href="/shisei/index.html">市政情報</a>
-                            <p class="gNaviSubBar">&nbsp;</p>
-                            <div class="gNaviSub">
-                                <ul>
-                                    <li class="odd"><a href="/shisei/newslist.html">新着情報一覧</a></li>
-                                    <li class="even"><a href="/shisei/menu05_0002.html">北九州市の概要</a></li>
-                                    <li class="odd"><a href="/shisei/menu05_0007.html">広報・広聴</a></li>
-                                    <li class="even"><a href="/shisei/menu05_0045.html">市長の部屋</a></li>
-                                    <li class="odd"><a href="/shisei/menu05_0060.html">職員採用情報</a></li>
-                                    <li class="even"><a href="/shisei/menu05_0067.html">構想・計画</a></li>
-                                    <li class="odd"><a href="/shisei/menu05_0095.html">統計・調査・報告</a></li>
-                                    <li class="even"><a href="/shisei/menu05_0161.html">財政状況・行財政改革</a></li>
-                                    <li class="odd"><a href="/shisei/menu05_0299.html">監査・行政評価</a></li>
-                                    <li class="even"><a href="/shisei/menu05_00145.html">情報公開・会議情報</a></li>
-                                    <li class="odd"><a href="/shisei/menu05_00016.html">条例・規則</a></li>
-                                    <li class="even"><a href="/shisei/menu05_0291.html">選挙</a></li>
-                                    <li class="odd"><a href="/shisei/menu05_0338.html">組織・電話番号</a></li>
-                                    <li class="even"><a href="/sigikai/index.html">北九州市議会</a></li>
-                                </ul>
-                            </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /gNavi -->
-
-</div>
-</div>
-<!-- /headerWrap -->
-
-<!-- pankuzu -->
-<div id="pankuzu" class="clearfix">
-<div class="printBtn"><a href="javascript:print();"><img src="/files/000000066.gif" width="104" height="21" alt="印刷用ページ" /></a></div>
-<p>現在位置：<a href="/index.html">トップページ</a> &gt; <a href="/kurashi/index.html">くらしの情報</a> &gt; <a href="/kurashi/menu01_0030.html">安全・安心</a> &gt; <a href="/kurashi/menu01_0146.html">危機管理と国民保護</a> &gt; <a href="/kurashi/menu01_0147.html">国民保護</a> &gt; 弾道ミサイルが落下する可能性がある場合の行動について</p>
-</div>
-<!-- /#pankuzu -->
-
-<!-- contents -->
-<div id="contents" class="clearfix">
-
-<div><a id="bodycontents" name="bodycontents"><span>ページ本文</span></a></div>
-
-<!-- mainContents -->
-<div id="mainContents">
-<div id="mainContentsInner">
-
-<!-- h1 -->
-<h1>弾道ミサイルが落下する可能性がある場合の行動について</h1>
-<!-- /h1 -->
-
-<!-- snsbtnBox -->
-<div class="snsbtnBox">
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.11';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-share-button" data-href="000030669" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" title="別ウィンドウが開きます">シェア</a></div>
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-lang="ja" data-show-count="false" title="別ウィンドウが開きます">ツイート</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<!-- /snsbtnBox -->
-
-
-<!-- contentsIndent -->
-<div class="contentsIndent clearfix">
-<div class="text">
-<p>　弾道ミサイルが落下する可能性がある場合に市民の皆さまにとっていただきたい行動について、内閣官房からお知らせしています。</p>
-<p>　万が一の際は、北九州市も国や県と協力して対応してまいりますが、市民の皆さまも事前に以下の情報をご確認いただき、冷静な行動を心がけてください。</p>
-</div>
-</div>
-<!-- /contentsIndent -->
-
-
-
-
-<a id="SUB4" name="SUB4"></a>
-<!-- h2 --><h2>弾道ミサイルが落下する可能性がある場合の行動について</h2><!-- h2 -->
-<!-- contentsIndent -->
-<div class="contentsIndent clearfix">
-<div class="text">
-<h3>（1）弾道ミサイル発射直後の情報伝達について</h3>
-<p>　弾道ミサイルは、発射から極めて短時間で飛来する可能性があります。<br />
-	　ミサイルが日本に飛来する可能性がある場合は、全国瞬時警報システム （Jアラート）を活用して、国から市町村等に緊急情報が伝達されるとともに、携帯電話にエリアメール・ 緊急速報メールが配信され、防災行政無線が設置されている地域では 特別なサイレン音とともにメッセージが流れます。</p>
-<h3>（2）メッセージが流れた直後に取るべき行動</h3>
-<p><strong>【屋外にいる場合】</strong><br />
-	　近くの建物の中、または地下に避難してください。<br />
-	　近くに適当な建物がない場合は、物陰に身を隠すか、地面に伏せて頭部を守ってください。<br />
-	<strong>【屋内にいる場合】</strong><br />
-	　できるだけ窓から離れ、できれば窓のない部屋へ移動してください。</p>
-<p>　その後は、国や県、北九州市からの情報に従って、落ち着いて行動してください。</p>
-<p>※下記リンクもご参照ください。</p>
-</div>
-</div>
-<!-- /contentsIndent -->
-
-
-<a id="SUB6" name="SUB6"></a>
-<!-- h2 --><h2>内閣官房からのお知らせ</h2><!-- h2 -->
-
-<div class="contentsIndent clearfix">
-<ul class="linkUL first">
- <li class="arrow"><a href="http://www.kokuminhogo.go.jp/kokuminaction/index.html">弾道ミサイル落下時の行動について（外部リンク）</a></li>
- <li class="arrow"><a href="http://www.kokuminhogo.go.jp/kokuminaction/qa.html">弾道ミサイル落下時の行動に関するQ＆A（外部リンク）</a></li>
- <li class="arrow"><a href="http://www.kokuminhogo.go.jp/kokuminaction/jalert.html">北朝鮮から発射された弾道ミサイルが日本に飛来する可能性がある場合における全国瞬時警報システム（Jアラート）による情報伝達について（外部リンク）</a></li>
- <li class="arrow"><a href="http://www.kokuminhogo.go.jp/shiryou/nkjalertqa.html">北朝鮮から発射された弾道ミサイルが日本に飛来する可能性がある場合における全国瞬時警報システム（Jアラート）による情報伝達に関するQ＆A（外部リンク）</a></li>
- </ul>
-</div>
-
-<a id="SUB8" name="SUB8"></a>
-<!-- h2 --><h2>消防庁からのお知らせ</h2><!-- h2 -->
-
-<div class="contentsIndent clearfix">
-<ul class="linkUL first">
- <li class="arrow"><a href="http://www.fdma.go.jp/neuter/topics/houdou/h29/05/290511_houdou_1-1.pdf">お持ちの携帯電話・スマートフォンがエリアメール・緊急速報メールを受信できるかどうかの確認方法（外部リンク）</a></li>
- </ul>
-</div>
-
-<div class="contentsIndent clearfix">
-<ul class="linkUL first">
- <li class="arrow"><a href="http://www.kokuminhogo.go.jp/">内閣官房「国民保護ポータルサイト」（外部リンク）</a></li>
-<li>からも情報をご確認いただけます。</li>
- </ul>
-</div>
-<a id="SUB10" name="SUB10"></a>
-<!-- h2 --><h2>北九州市の国民保護の取組み</h2><!-- h2 -->
-
-<div class="contentsIndent clearfix">
-<ul class="linkUL first">
- <li class="contents"><a href="/kiki-kanri/13800136.html">北九州市の国民保護の取組み</a></li>
- </ul>
-</div>
- 
-
- 
-
-
-
-
-
-
-
-
-<!-- download -->
-<div class="download">
-	<div class="downloadInner clearfix">
-		<p class="adobeReader">一部のファイルをPDF形式で提供しています。PDFの閲覧にはAdobe System社の無償ソフトウェア「Adobe Reader」が必要です。 下記のAdobe Readerダウンロードページなどから入手してください。<br />
-			<a href="http://get.adobe.com/jp/reader/">Adobe Readerダウンロードページ（外部リンク）</a></p>
-	</div>
-</div>
-<!-- /download -->
-
-<!-- departmentBox -->
-<div class="departmentBox">
-<h2 class="title">このページの作成者</h2>
-<div class="departmentBoxInner">
-<p><a href='/kiki-kanri/kiki-kanri.html'>危機管理室危機管理課</a><br />〒803-8501　北九州市小倉北区城内1番1号<br />電話：093-582-2110　FAX：093-582-2112<br /></p>
-<form id="inquire" action="https://ssl.city.kitakyushu.lg.jp/cgi-bin/inquire/inquire.cgi" method="post" style="margin:0px;">
-<a href="javascript:document.getElementById('inquire').submit();">メールを送信（メールフォーム）</a> 
-<input type="hidden" name="section_id" value="06010100" />
-<input type="hidden" name="pgid" value="000140491" />
-<input type="hidden" name="url" value="http://www.city.kitakyushu.lg.jp/kiki-kanri/13801156.html" />
-</form>
-</div>
-</div>
-<!-- /departmentBox -->
-
-<!-- enqueteBox -->
-<div class="enqueteBox">
-<form method="post" action="/cgi-bin/feedback/fb_accept.cgi" onsubmit="if(this.tx1.value == tx1_default && q1.q1_1.checked =='' && q1.q1_2.checked ==''){return false}else{return true};return false">
-<script type="text/Javascript"><!--
-var tx1_default = '';
-var submitted = false;
-var _debug = false;
-//--></script>
-<input type="hidden" name="mode" value="confirm">
-<input type="hidden" name="code" value="06010100" />
-<input type="hidden" name="pgid" value="000140491" />
-<input type="hidden" name="url" value="http://www.city.kitakyushu.lg.jp/kiki-kanri/13801156.html" />
-<input type="hidden" name="baseurl" value="http://www.city.kitakyushu.lg.jp/kiki-kanri/13801156.html" />
-<h2 class="title">このページについてご意見をお聞かせください</h2>
-<div class="enqueteBoxInner">
-<p><strong>お探しの情報は見つかりましたか？</strong></p>
-<p class="radioBox"><input id="q1_1" name="q1" type="radio" value="1"> <label for="q1_1">はい</label> <input id="q1_2" name="q1" type="radio" value="2"> <label for="q1_2">いいえ</label></p>
-<p><strong><label for="msg">その他、このページについてご意見がございましたらご記入ください。</label></strong></p>
-<textarea name="tx1" rows="4" cols="50" id="msg"></textarea>
-<p>ご注意</p>
-<ol>
-<li>こちらはお問い合わせ用のフォームではありません。<br />
-業務に関するお問い合わせやご意見は、「このページの作成者」欄に記載の部署へお願いいたします。</li>
-<li>住所・電話番号など個人情報を含む内容は記入しないでください。</li>
-</ol>
-<div class="tac"><input type="image" src="/files/000134744.gif" alt="入力内容確認" /></div>
-</div>
-</form>
-</div>
-<!-- /enqueteBox -->
-
-</div>
-</div>
-<!-- /mainContents -->
-
-<!-- rightContents -->
-<div id="rightContents">
-<!-- localNavi -->
-<div class="localNavi">
-<h2>危機管理と国民保護</h2>
-<ul>
- <li class="current"><a href="/kurashi/menu01_0147.html">国民保護</a></li>
-</ul>
-</div>
-<!-- /localNavi -->
-<div class="dotline"></div>
-<!-- bannerArea -->
-<div class="bannerArea">
-<ul>
-<li class="clearfix"><a href="/shisei/menu05_0339.html"><img src="/files/000076573.gif" width="210" height="40" alt="組織から探す" /></a></li>
-<li class="clearfix"><a href="/kuyakusyo.html"><img src="/files/000000071.gif" width="210" height="40" alt="区役所" /></a></li>
-<li class="clearfix"><a href="/shisetsu/index.html"><img src="/files/000000072.gif" width="210" height="40" alt="施設" /></a></li>
-<li class="clearfix"><a href="/shimin/file_0441.html"><img src="/files/000000073.gif" width="210" height="40" alt="市政・区政相談" /></a></li>
-<li class="clearfix"><a href="/shimin/file_0442.html"><img src="/files/000000074.gif" width="210" height="40" alt="市政・区政提案箱" /></a></li>
-<li class="clearfix"><a href="/shimin/file_0164.html"><img src="/files/000000070.gif" width="210" height="62" alt="北九州市コールセンター 093-671-8181 年中無休 8時から21時" /></a></li>
-</ul>
-</div> 
-<!-- /bannerArea -->
-</div>
-<!-- /rightContents -->
-</div>
-<!-- /contents -->
-
-<!-- pageTopBox -->
-<div class="pageTopBox clearfix">
-<p class="toIndex"><a href="/index.html">トップページへ戻る</a></p>
-<p class="pageTop"><a href="#PAGETOP">ページの先頭へ戻る</a></p>
-</div>
-<!-- /pageTopBox -->
-
-<!-- footer -->
-<div id="footer">
-<ul class="footerMokuji">
-<li class="mokuji">もくじ</li>
-<li class="kurashi"><a href="/kurashi/index.html">くらしの情報</a></li>
-<li><a href="/kanko/index.html">観光・おでかけ</a></li>
-<li><a href="/business/index.html">ビジネス・産業・まちづくり</a></li>
-<li><a href="/youkoso/index.html">ようこそ北九州</a></li>
-<li><a href="/shisei/index.html">市政情報</a></li>
-</ul>
-<div class="footerBottom clearfix">
-<div class="footerLeft">
-<p><strong>北九州市役所（本庁）</strong> [<a href="/category/file_0013.html">北九州市役所への行き方</a>]</p>
-<div class="addressArea clearfix">
-<p class="left">住所</p>
-<p class="right">：〒803-8501　北九州市小倉北区城内1番1号</p>
-</div>
-<div class="addressArea clearfix">
-<p class="left">開庁時間</p>
-<p class="right">：月曜日から金曜日の8時30分から17時15分まで（土曜日、日曜日、祝日及び年末年始を除く）</p>
+<div class="l-footer">
+<a href="#" class="m-pageTop"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
 </div>
 </div>
-<div class="footerRight">
-<ul>
-<li class="first"><a href="/category/file_0001.html">アクセシビリティについて</a></li>
-<li><a href="/category/file_0002.html">免責事項</a></li>
-<li><a href="/category/file_0003.html">リンク・著作権</a></li>
-<li><a href="/category/file_0004.html">個人情報</a></li>
-<li><a href="/category/file_0005.html">RSS配信について</a></li>
-</ul>
-<p lang="en">Copyright (C) 2017 CITY OF KITAKYUSHU All Rights Reserved.</p>
-</div>
-</div>
-</div> 
-<!-- /footer -->
-
-</div>
-</div>
-<!-- /container -->
-
-</div>
-</div>
-<!-- /masterLayoutArea -->
 </body>
 </html>
